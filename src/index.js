@@ -14,8 +14,8 @@ app.get("/", async (_, res) => {
   await res.status(200).json({ message: "Hello world!" })
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server listening on port ${PORT}`);
+// });
 
 module.exports = app;
