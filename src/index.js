@@ -10,8 +10,8 @@ app.use(morgan('dev'));
 
 const PORT = 8000;
 
-app.get("/", async (_, res) => {
-  await res.status(200).json({ message: "Hello world!" })
+app.get("/", (_, res) => {
+  res.status(200).json({ message: "Hello world!" })
 });
 
 // app.listen(PORT, () => {
